@@ -1,0 +1,16 @@
+{
+  "name": "donativos-venezuela-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "predev": "node scripts/free-port.js",
+    "dev": "node server.js",
+    "prestart": "node scripts/free-port.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.0",
+    "express": "^4.21.0"
+  }
+}
