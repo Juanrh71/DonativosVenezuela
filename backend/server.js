@@ -10,15 +10,7 @@ const DATA_FILE = path.join(__dirname, 'data', 'reports.json')
 const PORT = process.env.PORT || 3001
 
 const app = express()
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'http://localhost:5175',
-    'http://127.0.0.1:5173',
-    'https://juanrh71.github.io'
-  ]
-}))
+app.use(cors())
 app.use(express.json())
 
 const SAMPLE_REPORTS = []

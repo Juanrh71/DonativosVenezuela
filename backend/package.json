@@ -4,9 +4,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "predev": "node scripts/free-port.js",
-    "dev": "node server.js",
-    "prestart": "node scripts/free-port.js",
+    "dev": "node scripts/free-port.js && node server.js",
     "start": "node server.js"
   },
   "dependencies": {
